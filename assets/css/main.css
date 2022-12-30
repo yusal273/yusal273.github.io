@@ -1,0 +1,292 @@
+:root
+{
+ --blue: rgb(0, 0, 214);
+ --lightblue: rgb(219 242 255);
+ --mute: rgb(165, 162, 162);
+ --scroll: #089dbe;
+ --black: #000000;
+ --notification_pointer:  rgb(120, 207, 120);
+}
+
+
+body
+{
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+ li
+ {
+    list-style: none;
+ }
+/* upnav */
+.upnav
+{    
+    justify-content: space-between;
+    
+}
+
+
+/* end upnav */
+/* side_nav */
+
+.side_nav
+{
+height: 90vh;
+display: flex;
+align-items: center;
+flex-direction: column;
+overflow-y: auto;
+
+}
+
+
+.side_nav::-webkit-scrollbar
+{
+    width: 5px;
+}
+.side_nav::-webkit-scrollbar-track
+{
+border-radius: 10px;
+}
+.side_nav::-webkit-scrollbar-thumb:hover
+{
+background: var(--scroll);
+
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+/* end side_nav */
+.text-mute
+{
+color: var(--mute);
+}
+.logo_div
+{
+    padding-top: 6px;
+}
+ .logotext
+ {
+  font-size: 15px;
+ }
+.active_nav
+{
+    background-color: var(--lightblue);
+    color: var(--blue);
+}
+
+.active_icon_nav
+{
+    background-color:  var(--blue);
+}
+
+
+
+
+/* componenets styles */
+.grow
+{
+    flex-grow: 1;
+}
+.c_img
+{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    outline: none;
+}
+.f-center
+{
+    display: flex;
+align-items: center;
+justify-content: center;
+
+}
+.round_btn
+{
+    border-radius: 8px;
+}
+
+.btw{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* scroll */
+.scroll
+{
+    height: 90vh; 
+    flex-grow: 1;  
+     overflow-y: scroll;
+     overflow-x: hidden;
+}
+
+.scroll::-webkit-scrollbar
+{
+    width: 5px;
+}
+.scroll::-webkit-scrollbar-track
+{
+border-radius: 10px;
+}
+.scroll::-webkit-scrollbar-thumb:hover
+{
+background: var(--scroll);
+
+}
+.scroll_header
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* map */
+.map
+{
+    height: 99vh;
+    flex-grow: 1;
+    border-bottom-left-radius: 20px;
+}
+
+
+
+/* styles */
+.border-right
+{
+    border-right: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color)!important;
+}
+.border-left
+{
+    border-left: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color)!important;
+}
+
+
+
+
+
+
+
+
+
+
+/* newsletter */
+.newsletter {
+    position: relative;
+    padding-top: 30px;
+    padding-left: 200px;
+    flex-grow: 1;
+    width: 694px;
+    height: 549px;
+flex-direction: column;
+}
+
+.newsletter svg {
+    position: absolute;
+    z-index: 0;
+    top: 0px;
+    left: -5px;
+    fill: var(--lightblue);
+}
+
+.newsletter .newsletter-title {
+    margin-bottom: 40px;
+    font-family: IMFell DW,Times,Georgia,serif;
+    font-weight: 400;
+    font-style: italic;
+    color: #1107ff;
+    font-size: 4.0625rem;
+    letter-spacing: -.02em;
+    line-height: .9230769231;
+    position: relative;
+    z-index: 999;
+}
+
+.newsletter .newsletter-text {
+    color: rgba(17,7,255,.8);
+    padding-right: 140px;
+    position: relative;
+    z-index: 999;
+    max-width: 450px;
+}
+
+.newsletter .newsletter-form {
+    position: relative;
+    max-width: 355px;
+    margin-top: 23px;
+    z-index: 999;
+}
+
+.newsletter .newsletter-form input {
+    height: 55px;
+    width: 100%;
+    padding: 18px 135px 17px 30px;
+    font-family: IM Fell English,Times,Georgia,serif;
+    font-weight: 400;
+    font-style: italic;
+    border: 0 none;
+    border-radius: 20px;
+    outline: none;
+    background-color: #fff;
+    color: #1107ff;
+    font-size: 1.125rem;
+    line-height: 1;
+}
+
+.newsletter .newsletter-form button {
+    font-family: Sofia Pro,Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    width: 116px;
+    height: 36px;
+    transition: background-color .3s cubic-bezier(.165,.84,.44,1);
+    border-radius: 15px;
+    background-color: var(--lightblue);
+    color: #fff;
+    font-size: .875rem;
+    line-height: 1;
+    position: absolute;
+    right: 9px;
+    bottom: 9px;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    border: 0px;
+    outline: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+/* mobile */
+
+.mobile_products_x_scroll
+{
+    
+    overflow-x: scroll;
+}
+
+
+.mobile_products_x_scroll::-webkit-scrollbar
+{
+    height: 2px;
+}
+.mobile_products_x_scroll::-webkit-scrollbar-track
+{
+border-radius: 10px;
+}
+.mobile_products_x_scroll::-webkit-scrollbar-thumb:hover
+{
+background: var(--scroll);
+
+}
